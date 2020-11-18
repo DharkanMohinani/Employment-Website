@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <m
+    eta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+	<title>Recruiter Registration</title>
+</head>
+<body>
+	
+	<div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Register</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="Location" placeholder="Location" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="Contact No" placeholder="Contact No" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="Email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="Experience" placeholder="Experience" />
+            </div>
+            <h2 class="title">Upload your previous work!</h2>
+            <div>
+              <input type="file" id="real-file" hidden="hidden" />
+        <button type="button" id="custom-button">CHOOSE A FILE</button>
+        <span id="custom-text">No file chosen, yet.</span>
+        <script>
+          const realFileBtn = document.getElementById("real-file");
+        const customBtn = document.getElementById("custom-button");
+        const customTxt = document.getElementById("custom-text");
+
+        customBtn.addEventListener("click", function() {
+          realFileBtn.click();
+        });
+
+        realFileBtn.addEventListener("change", function() {
+          if (realFileBtn.value) {
+          customTxt.innerHTML = realFileBtn.value.match(
+            /[\/\\]([\w\d\s\.\-\(\)]+)$/
+          )[1];
+          } else {
+          customTxt.innerHTML = "No file chosen, yet.";
+          }
+        });
+        </script>
+            </div>
+            
+            <input type="submit" value="Register" class="btn solid" />
+            
+            
+        <div>
+      </div>
+
+    </div>
+    
+		<div class="panels-container">
+        	<div class="panel left-panel">
+          		<div class="content">
+            		<h3>Register Now!!</h3>
+            		<p>
+              		Register now and hire the candidates which you want!!
+            		</p>
+          		<div>
+           		<img src="img/log.svg" class="image" alt="" />
+           	<div>
+           	
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
